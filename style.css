@@ -364,6 +364,7 @@
     padding: 35px;
     border-radius: 50px;
     color: darkgray;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .computer_shortcuts_category_box {
@@ -375,6 +376,7 @@
     padding: 35px;
     border-radius: 50px;
     color: darkgray;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .computer_image_flipped {
