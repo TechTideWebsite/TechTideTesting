@@ -238,6 +238,7 @@
     cursor: pointer;
     transform: scale(1);
     transition: transform 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .the_team
@@ -417,6 +418,7 @@
     top: 750px;
     left: 1900px;
     z-index: -2;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .More_website_information_title {
@@ -526,6 +528,98 @@
     transition: transform 0.3s;
 }
 
+.rad_text {
+    color: black;
+    font-family: 'Roboto';
+    position: relative;
+    top: 240px;
+    left: 400px;
+    font-size: 60px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    z-index: -2;
+}
+
+.rad_gaming_profile_page {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
+}
+
+.rad_gaming_techtide_logo {
+    position: relative;
+    top: 30px;
+    left: 920px;
+    height: 100px;
+}
+
+.rad_text_p1 {
+    color: black;
+    font-family: 'Roboto';
+    position: relative;
+    top: 200px;
+    left: 200px;
+    font-size: 40px;
+    width: 2010px;
+}
+
+.txt {
+    color: blue;
+    -webkit-text-stroke: 2px blue;
+    z-index: 99;
+}
+
+.color_for_rad_gaming_p1 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.outline_rad_gaming_p1 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.bottom_text_rad_gaming {
+    position: relative;
+    top: 400px;
+    left: 1050px;
+    z-index: -2;
+    font-family: Roboto;
+    font-size: 50px;
+    -webkit-text-stroke: 2px black;
+}
+
+.support_rad_gaming_button {
+    color: white;
+    font-family: 'Roboto';
+    position: relative;
+    top: 500px;
+    left: 1100px;
+    font-size: 40px;
+    border-radius: 35px;
+    padding: 15px;
+    border: solid;
+    z-index: -2;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+    text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    background: repeating-linear-gradient(90deg, 
+    red 0%, orange 14%, yellow 28%, rgb(0, 255, 0) 42%, rgb(0, 140, 255) 56%, rgb(149, 0, 255) 70%, violet 84%, red 100%);
+    background-size: 200% 200%;
+    animation: rainbowFlow 5s infinite linear;
+}
+
+.computer_for_computer_page {
+    position: relative;
+    bottom: 700px;
+    left: 250px;
+    z-index: 0;
+}
+
 .computers_button:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
@@ -566,6 +660,16 @@
     transition: transform 0.3s;
 }
 
+.rad_gaming_profile_page:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.support_rad_gaming_button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -579,6 +683,7 @@ html {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
