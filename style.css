@@ -273,7 +273,7 @@
     height: auto;
     transform: scale(1);
     transition: transform 0.3s;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     image-rendering: pixelated;
     will-change: transform;
 }
@@ -299,7 +299,7 @@
     height: auto;
     transform: scale(1);
     transition: transform 0.3s;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     image-rendering: pixelated;
     will-change: transform;
 }
