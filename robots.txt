@@ -1,0 +1,29 @@
+# Allow Major Search Engines
+User-agent: Googlebot
+Disallow: /404.html
+
+User-agent: Bingbot
+Disallow: /404.html
+
+User-agent: DuckDuckBot
+Disallow: /404.html
+
+User-agent: Applebot
+Disallow: /404.html
+
+# Allow Social Media Bots (for previews)
+User-agent: FacebookExternalHit
+Disallow: /404.html
+
+User-agent: Twitterbot
+Disallow: /404.html
+
+User-agent: LinkedInBot
+Disallow: /404.html
+
+User-agent: PinterestBot
+Disallow: /404.html
+
+# Block all other bots
+User-agent: *
+Disallow: /404.html
