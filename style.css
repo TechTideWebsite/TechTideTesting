@@ -752,6 +752,16 @@
     image-rendering: pixelated;
 }
 
+.computer_image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.circuit_board_image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
