@@ -271,6 +271,9 @@
     position: relative;
     width: 100%;
     height: auto;
+    transform: scale(1);
+    transition: transform 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .Rad_Gaming_profile a {
@@ -292,6 +295,9 @@
     position: relative;
     width: 100%;
     height: auto;
+    transform: scale(1);
+    transition: transform 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
 .Wait_where_did_that_page_go_text
@@ -694,6 +700,16 @@
 }
 
 .support_rad_gaming_button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.Rad_Gaming_profile img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.Retro_Gaming_profile img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
