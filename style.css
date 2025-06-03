@@ -620,6 +620,34 @@
     z-index: 0;
 }
 
+.small_about_Retro_gaming_text
+{
+    color: black;
+    font-family: 'Roboto';
+    position: relative;
+    top: 0px;
+    left: 450px;
+    font-size: 25px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    z-index: -2;
+}
+
+.tech_and_tide
+{
+    position: relative;
+    top: 595px;
+    left: 0px;
+    z-index: -2;
+}
+
+.fourofour_page
+{
+    position: relative;
+    top: 595px;
+    left: 1140px;
+    z-index: -2;
+}
+
 .computers_button:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
