@@ -392,6 +392,7 @@
     z-index: 0;
     transform: scale(1);
     transition: transform 0.3s;
+    animation: subtleFloatNoSpin 5s ease-in-out infinite;
 }
 
 .about_site_text_under_computer {
@@ -421,6 +422,7 @@
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1);
     transition: transform 0.3s;
+    animation: subtleFloatNoSpin 5s ease-in-out infinite;
 }
 
 .More_website_information_title {
@@ -870,4 +872,10 @@ html {
     0% { transform: translateY(-10px) rotate(-10deg); }
     50% { transform: translateY(3px) rotate(-9deg); }
     100% { transform: translateY(-10px) rotate(-10deg); }
+}
+
+@keyframes subtleFloatNoSpin {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(3px); }
+    100% { transform: translateY(-10px); }
 }
