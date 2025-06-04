@@ -148,7 +148,7 @@
     top: 250px;
     left: 190px;
     font-size: 30px;
-    z-index: -2;
+    z-index: 2;
 }
 
 .computer_tricks_text
