@@ -618,6 +618,8 @@
     bottom: 800px;
     left: 250px;
     z-index: 0;
+    transform: scale(1);
+    transition: transform 0.3s;
 }
 
 .small_about_Retro_gaming_text
@@ -820,6 +822,11 @@
 }
 
 .circuit_board_image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.computer_for_computer_page:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
