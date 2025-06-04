@@ -75,6 +75,29 @@
     
     </section>
 
+            <div class="line"></div>
+    <div class="box"></div>
+    <img src="assets/Computer.svg" class="computer_for_computer_page2" style="height: 500px;">
+    <div class="big_white_text">Did you know?</div>
+    <span id="factDisplay" class="random_fact_computers" style="width: 400px;">Loading fact...</span>
+
+    <script>
+        const computerFacts = [
+            "The first computer mouse was invented by Doug Engelbart in 1963.",
+            "The first computer virus, called 'Creeper,' was created in 1971.",
+            "The world's first website went live on August 6, 1991.",
+            "The first computer game, 'Spacewar!,' was created in 1962.",
+            "The first hard disk drive was created by IBM in 1956 and stored only 5 MB of data."
+        ];
+
+        function displayRandomFact() {
+            const randomIndex = Math.floor(Math.random() * computerFacts.length);
+            document.getElementById('factDisplay').innerText = computerFacts[randomIndex];
+        }
+
+        window.onload = displayRandomFact; // Runs when the page loads
+    </script>
+
     </main>
 
                     <footer style="background-color: #00755b; top: 2000px;" class="bottom_bar">
