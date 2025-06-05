@@ -467,7 +467,7 @@
     text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     background: repeating-linear-gradient(90deg, 
-    red 0%, orange 14%, yellow 28%, rgb(0, 255, 0) 42%, rgb(0, 140, 255) 56%, rgb(149, 0, 255) 70%, violet 84%, red 100%);
+    #00F5D4 0%, #00A1F1 33.33%, #7F00FF 66.66%, #00F5D4 100%);
     background-size: 200% 200%;
     animation: rainbowFlow 5s infinite linear;
 }
@@ -608,7 +608,7 @@
     text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     background: repeating-linear-gradient(90deg, 
-    red 0%, orange 14%, yellow 28%, rgb(0, 255, 0) 42%, rgb(0, 140, 255) 56%, rgb(149, 0, 255) 70%, violet 84%, red 100%);
+    #00F5D4 0%, #00A1F1 33.33%, #7F00FF 66.66%, #00F5D4 100%);
     background-size: 200% 200%;
     animation: rainbowFlow 5s infinite linear;
 }
@@ -677,7 +677,7 @@
     text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     background: repeating-linear-gradient(90deg, 
-    red 0%, orange 14%, yellow 28%, rgb(0, 255, 0) 42%, rgb(0, 140, 255) 56%, rgb(149, 0, 255) 70%, violet 84%, red 100%);
+    #00F5D4 0%, #00A1F1 33.33%, #7F00FF 66.66%, #00F5D4 100%);
     background-size: 200% 200%;
     animation: rainbowFlow 5s infinite linear;
 }
@@ -715,7 +715,7 @@
     z-index: -2;
     background: linear-gradient(to bottom, rgb(89, 0, 141), rgb(226, 110, 255));
     clip-path: polygon(10% 100%, 90% 100%, 90% 0%);
-    transform: scale(5); /* 1.5x bigger */
+    transform: scale(5);
 }
 
 .computer_for_computer_page2 {
@@ -834,7 +834,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: 120px; /* Adjust the gap */
+  scroll-padding-top: 120px;
 }
 
 .loader {
@@ -894,7 +894,7 @@ table {
     -webkit-text-stroke: 0px;
     left: 100px;
     top: 300px;
-    margin-bottom: 160px; /* Adds extra space before the next table */
+    margin-bottom: 160px;
 }
 
 td {
@@ -904,8 +904,8 @@ td {
 }
 
 td {
-    max-width: 30px;  /* Limits how wide the column can go */
-    word-wrap: break-word; /* Forces long text to wrap inside the box */
+    max-width: 30px;
+    word-wrap: break-word;
     white-space: normal; /* Prevents text from spilling outside */
 }
 
@@ -916,7 +916,7 @@ th {
     color: white;
     font-weight: bold;
     padding: 12px;
-    max-width: 30px;  /* Limits how wide the column can go */
+    max-width: 30px;
 }
 
 .table_heading_computer_shortcuts {
