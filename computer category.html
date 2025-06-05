@@ -81,23 +81,37 @@
     <div class="big_white_text">Did you know?</div>
     <span id="factDisplay" class="random_fact_computers" style="width: 400px;">Loading fact...</span>
 
-    <script>
-        const computerFacts = [
-            "The first computer mouse was invented by Doug Engelbart in 1963.",
-            "The first computer virus, called 'Creeper,' was created in 1971.",
-            "The world's first website went live on August 6, 1991.",
-            "The first computer game, 'Spacewar!,' was created in 1962.",
-            "The first hard disk drive was created by IBM in 1956 and stored only 5 MB of data."
-        ];
+        <script>
+    const computerFacts = [
+        "The first computer mouse was invented by Doug Engelbart in 1963.",
+        "The first computer virus, called 'Creeper,' was created in 1971.",
+        "The world's first website went live on August 6, 1991.",
+        "The first computer game, 'Spacewar!,' was created in 1962.",
+        "The first hard disk drive was created by IBM in 1956 and stored only 5 MB of data.",
+        "The first email was sent by Ray Tomlinson in 1971.",
+        "The term 'byte' was coined in 1956 as a unit of digital data.",
+        "The first laptop, Osborne 1, was released in 1981.",
+        "The first computer password was used at MIT in the 1960s.",
+        "The first touchscreen was invented in 1965 by E.A. Johnson.",
+        "The first computer weighed over 27 tons and took up 1,800 square feet.",
+        "The QWERTY keyboard was designed to slow down typists to prevent jams in early typewriters.",
+        "The first known computer programmer was Ada Lovelace in the 1800s.",
+        "The first graphical web browser, Mosaic, was released in 1993.",
+        "The first USB flash drive was introduced in 2000.",
+        "The first smartphone, IBM Simon, was released in 1994.",
+        "The first computer animation was created in 1961 at MIT.",
+        "The first computer-generated music was composed in 1951.",
+        "The first AI chatbot, ELIZA, was developed in 1966."
+    ];
 
-        function displayRandomFact() {
-            const randomIndex = Math.floor(Math.random() * computerFacts.length);
-            document.getElementById('factDisplay').innerText = computerFacts[randomIndex];
-        }
+    function displayRandomFact() {
+        const randomIndex = Math.floor(Math.random() * computerFacts.length);
+        document.getElementById('factDisplay').innerText = computerFacts[randomIndex];
+    }
 
-        window.onload = displayRandomFact; // Runs when the page loads
-    </script>
-
+    window.onload = displayRandomFact; // Runs when the page loads
+</script>
+        
     </main>
 
             <img src="assets/Computer.svg" class="computer_for_computer_page">
