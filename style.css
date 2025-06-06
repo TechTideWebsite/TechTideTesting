@@ -847,6 +847,35 @@ th {
     -webkit-text-stroke: 1px blue
 }
 
+.logos-slide a {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+.back_to_top_cs_button {
+    color: white;
+    font-family: 'Roboto';
+    position: relative;
+    top: 380px;
+    left: 1150px;
+    font-size: 40px;
+    border-radius: 35px;
+    padding: 15px;
+    border: solid;
+    z-index: -2;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+    text-shadow: 0 0 5px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    background: repeating-linear-gradient(90deg, 
+    #00F5D4 0%, #00A1F1 33.33%, #7F00FF 66.66%, #00F5D4 100%);
+    background-size: 200% 200%;
+    animation: rainbowFlow 5s infinite linear;
+}
+
+
 .computers_button:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
@@ -920,6 +949,16 @@ th {
 }
 
 .computer_for_computer_page:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.back_to_top_cs_button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.logos-slide img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
