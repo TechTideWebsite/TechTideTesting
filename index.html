@@ -2,12 +2,6 @@
 <html lang="en" id="home_page">
 <head>
 
-    <script>
-        if (window.innerWidth < 1439) {
-  window.location.href = "https://rad-coding.github.io/SmartCode";
-}
-    </script>
-
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,6 +14,18 @@
     "name": "Desktop Users Only"
   }
 }
+</script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let screenWidth = window.innerWidth;
+
+        // Check if screen width is below 1025 pixels
+        if (screenWidth < 1025 && !sessionStorage.getItem("alertShown")) {
+            alert("Your screen size may be too small for the best experience on this site. Try using a laptop or desktop, zooming out, or turning on desktop mode if available.");
+            sessionStorage.setItem("alertShown", "true"); // Prevents repeat alerts
+        }
+    });
 </script>
 
     <meta charset="UTF-8">
