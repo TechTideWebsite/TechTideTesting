@@ -18,19 +18,21 @@
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        let screenWidth = window.innerWidth;
+        setTimeout(function () { // Delays execution by 1 second (1000ms)
+            let screenWidth = window.innerWidth;
 
-        // Check if screen width is below 1025 pixels
-        if (screenWidth < 1025 && !sessionStorage.getItem("alertShown")) {
-            alert("Your screen size may be too small for the best experience on this site. Try using a laptop or desktop, zooming out, or turning on desktop mode if available.");
-            sessionStorage.setItem("alertShown", "true"); // Prevents repeat alerts
-        }
+            alert("Screen width detected: " + screenWidth); // Log screen width
+
+            // Check if screen width is below 1025 pixels
+            if (screenWidth < 1025 && !sessionStorage.getItem("alertShown")) {
+                setTimeout(function () { // Add slight delay before showing the second alert
+                    alert("Your screen size may be too small for the best experience on this site. Try using a laptop or desktop, zooming out, or turning on desktop mode if available.");
+                    sessionStorage.setItem("alertShown", "true"); // Prevents repeat alerts
+                }, 1500);
+            }
+        }, 1000); // Initial delay before detecting screen size
     });
 </script>
-
-    <script>
-        console.log("Screen width detected:", window.innerWidth);
-    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
