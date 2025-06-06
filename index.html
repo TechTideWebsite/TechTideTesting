@@ -21,10 +21,8 @@
         setTimeout(function () { // Delays execution by 1 second (1000ms)
             let screenWidth = window.innerWidth;
 
-            alert("Screen width detected: " + screenWidth); // Log screen width
-
             // Check if screen width is below 1025 pixels
-            if (screenWidth < 1025 && !sessionStorage.getItem("alertShown")) {
+            if (screenWidth < 1537 && !sessionStorage.getItem("alertShown")) {
                 setTimeout(function () { // Add slight delay before showing the second alert
                     alert("Your screen size may be too small for the best experience on this site. Try using a laptop or desktop, zooming out, or turning on desktop mode if available.");
                     sessionStorage.setItem("alertShown", "true"); // Prevents repeat alerts
