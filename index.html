@@ -16,38 +16,6 @@
 }
 </script>
 
-          <style>
-    #screenWarning {
-        display: none; /* Hidden by default */
-        position: fixed;
-        bottom: 4630px;
-        left: 100px;
-        transform: translateX(-50%);
-        background-color: #ffcc00;
-        color: black;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-        z-index: 5;
-        width: 150px;
-    }
-</style>
-
-<div id="screenWarning">
-    Your screen may be too small for the best experience. Try desktop mode or zooming out.
-    <button onclick="document.getElementById('screenWarning').style.display='none'">Dismiss</button>
-</div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let screenWidth = window.innerWidth;
-        if (screenWidth < 1537) {
-            document.getElementById("screenWarning").style.display = "block"; // Show the banner
-        }
-    });
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Our website is dedicated to solve any of your tech related problems and answer your tech related questions or even teach you something new in the world of technology.">
