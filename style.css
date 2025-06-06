@@ -795,6 +795,8 @@
 .logos-slide img {
   height: 400px;
   margin: 0 40px;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
 table {
