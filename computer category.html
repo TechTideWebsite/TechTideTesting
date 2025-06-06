@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Website",
+  "name": "TechTide",
+  "url": "https://TechTideWebsite.github.io/TechTide",
+  "description": "Our website is dedicated to solving any of your tech-related problems and answering your tech-related questions or even teaching you something new in the world of technology.",
+  "audience": {
+    "@type": "Audience",
+    "name": "Desktop Users Only"
+  }
+}
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTide</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+
+</head>
+
+<!-- <body background="assets/TechTide_backround.png" class="background" style="width: 1000px; height: 2000px;"></body> -->
+
+<body>
+
+    <header style="width: 2560px; height: 101px; background-color: #00755b;" class="top_bar">
+    
+        <img src="assets/TechTide logo.png" height="90" alt="TechTide Logo" class="title" >
+    
+        <div>
+            <a href="index.html" class="home_button">
+        <h1>Home</h1>
+            </a>
+        </div>
+    
+        <div>
+            <a  href="page link here" class="about_button">
+        <h1>About</h1>
+            </a>
+        </div>
+    
+        <div>
+            <a  href="team.html" class="team_button">
+        <h1>Team</h1>
+            </a>
+        </div>
+    
+    </header>
+
+    <main style="background-color: rgb(235, 235, 235); width: 2400px; height: 1000px;" class="computer_category_box">
+
+        <section>
+
+    <div class="computer_title" style="width: 500px;">
+        Computers
+    </div>
+
+    <div class="computer_tricks_text" style="width: 400px;">
+        Computer tricks
+    </div>
+
+    <div class="computer_shortcuts_text" style="width: 500px;">
+        <a href="computer shortcuts category.html" style="width: 500px; z-index: 20;">
+            Computer shortcuts
+        </a>
+    
+    </section>
+
+    <div class="line"></div>
+    <div class="box"></div>
+    <img src="assets/Computer.svg" class="computer_for_computer_page2" style="height: 500px;">
+    <div class="big_white_text">Did you know?</div>
+    <span id="factDisplay" class="random_fact_computers" style="width: 400px;">Loading fact...</span>
+
+    <script>
+    const computerFacts = [
+        "The first computer mouse was invented by Doug Engelbart in 1963.",
+        "The first computer virus, called 'Creeper,' was created in 1971.",
+        "The world's first website went live on August 6, 1991.",
+        "The first computer game, 'Spacewar!,' was created in 1962.",
+        "The first hard disk drive was created by IBM in 1956 and stored only 5 MB of data.",
+        "The first email was sent by Ray Tomlinson in 1971.",
+        "The term 'byte' was coined in 1956 as a unit of digital data.",
+        "The first laptop, Osborne 1, was released in 1981.",
+        "The first computer password was used at MIT in the 1960s.",
+        "The first touchscreen was invented in 1965 by E.A. Johnson.",
+        "The first computer weighed over 27 tons and took up 1,800 square feet.",
+        "The QWERTY keyboard was designed to slow down typists to prevent jams in early typewriters.",
+        "The first known computer programmer was Ada Lovelace in the 1800s.",
+        "The first graphical web browser, Mosaic, was released in 1993.",
+        "The first USB flash drive was introduced in 2000.",
+        "The first smartphone, IBM Simon, was released in 1994.",
+        "The first computer animation was created in 1961 at MIT.",
+        "The first computer-generated music was composed in 1951.",
+        "The first AI chatbot, ELIZA, was developed in 1966."
+    ];
+
+    function displayRandomFact() {
+        const randomIndex = Math.floor(Math.random() * computerFacts.length);
+        document.getElementById('factDisplay').innerText = computerFacts[randomIndex];
+    }
+
+    window.onload = displayRandomFact; // Runs when the page loads
+</script>
+
+    </main>
+
+        <img src="assets/Computer.svg" class="computer_for_computer_page">
+
+                    <footer style="background-color: #00755b; top: 2000px;" class="bottom_bar">
+    
+        <img src="assets/TechTide logo.png" height="90" alt="TechTide Logo" class="bottom_logo" loading="lazy">
+    
+        <div>
+            <a href="index.html" class="home_button_bottom">
+        <h1>Home</h1>
+            </a>
+        </div>
+    
+        <div>
+            <a  href="page link here" class="about_button_bottom">
+        <h1>About</h1>
+            </a>
+        </div>
+    
+        <div>
+            <a  href="team.html" class="team_button_bottom">
+        <h1>Team</h1>
+            </a>
+        </footer>
+    
+    </div>
+ <!--   <img src="assets/download_23.png" class="bottom_bar"> -->
+    
+</body>
+
+</html>
