@@ -204,18 +204,17 @@
   <script>
 
     window.onload = function() {
-    let screenWidth = window.innerWidth; // Use actual screen width, NOT multiplied
-    let pixelRatio = window.devicePixelRatio; // Detect pixel ratio
+    let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    if (screenWidth <= 1200 || (screenWidth / pixelRatio) <= 1200) {
+    if (screenWidth <= 1200) {
         document.body.style.zoom = "90%";
-    } else if (screenWidth <= 768 || (screenWidth / pixelRatio) <= 768) {
+    } else if (screenWidth <= 768) {
         document.body.style.zoom = "80%";
-    } else if (screenWidth <= 480 || (screenWidth / pixelRatio) <= 480) {
+    } else if (screenWidth <= 480) {
         document.body.style.zoom = "70%";
     }
 
-    alert("Adjusted Width: " + (screenWidth / pixelRatio) + "px, Applied zoom: " + document.body.style.zoom);
+    alert("Final Adjusted Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
 };
 
   </script>
