@@ -1041,24 +1041,3 @@ html {
     transform: translateX(-100%);
   }
 }
-
-@media screen and (max-width: 1199px) {
-    body {
-        transform: scale(0.9);
-        transform-origin: top left;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        transform: scale(0.8);
-        transform-origin: top left;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        transform: scale(0.7);
-        transform-origin: top left;
-    }
-}
