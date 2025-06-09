@@ -200,11 +200,8 @@
     // Calculate zoom percentage relative to 2560px width (which is treated as 100% zoom)
     let zoomLevel = screenWidth / 2560;
 
-    // Reduce zoom slightly to correct over-scaling
-    zoomLevel *= 0.85; // Adjust this factor if needed
-
-    // Ensure zoom stays within reasonable limits (minimum 50%, maximum 100%)
-    zoomLevel = Math.max(0.5, Math.min(zoomLevel, 1));
+    // Remove minimum zoom limit—devices can zoom out fully if needed
+    zoomLevel = Math.min(zoomLevel, 1); // Ensures zoom does not exceed 100%
 
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
