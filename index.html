@@ -195,15 +195,15 @@
 <script>
 
   window.onload = function() {
-    let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-pixel-density screens
+    let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    // Dynamic scaling with a minimum zoom of 53%
-    let zoomLevel = Math.max(0.53, screenWidth / 1606); // Ensures no zoom lower than 53%
+    // Calculate zoom dynamically (adjust the divisor for fine-tuning)
+    let zoomLevel = Math.min(1, Math.max(0.53, screenWidth / 1606)); // Ensures zoom is not below 53%
 
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
 
-    alert("Detected Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
+    alert("Detected Screen Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
 };
 
   </script>
