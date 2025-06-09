@@ -1049,6 +1049,13 @@ html {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    body {
+        transform: scale(0.9);
+        transform-origin: top left;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         transform: scale(0.8);
