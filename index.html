@@ -200,9 +200,9 @@
     // Base scaling on 2560px width (Chrome on 4K)
     let zoomLevel = screenWidth / 2560;
 
-    // Ensure zoom does not exceed 100% and does not go below 53%
+    // Ensure phones match the tablet's 53% zoom appearance
     if (screenWidth <= 768) { // Phones typically have widths below 768px
-        zoomLevel = Math.max(0.75, Math.min(zoomLevel, 1)); // Adjust for phones
+        zoomLevel = 0.53; // Force 53% zoom for phones
     } else if (Math.abs(zoomLevel - 0.627) < 0.05) { // Tablet fix
         zoomLevel = 0.53;
     } else {
