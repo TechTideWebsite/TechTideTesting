@@ -200,8 +200,8 @@
     // Calculate zoom percentage relative to 2560px width (which is treated as 100% zoom)
     let zoomLevel = screenWidth / 2560;
 
-    // Apply a smaller correction factor for better balance
-    zoomLevel *= 0.89; // Reduced from 0.91 to fine-tune scaling
+    // Apply a slightly smaller correction factor for better balance
+    zoomLevel *= 0.87; // Reduced slightly from 0.89
 
     // Ensure zoom does not exceed 100%
     zoomLevel = Math.min(zoomLevel, 1);
