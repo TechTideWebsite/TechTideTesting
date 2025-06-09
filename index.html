@@ -204,15 +204,18 @@
   <script>
 
     window.onload = function() {
-    if (window.innerWidth <= 1201) {
-        document.body.style.zoom = "0%";
-    } else if (window.innerWidth <= 768) {
+    let screenWidth = window.innerWidth * window.devicePixelRatio; // Adjust for high-pixel-density screens
+
+    if (screenWidth <= 1200) {
+        document.body.style.zoom = "90%";
+    } else if (screenWidth <= 768) {
         document.body.style.zoom = "80%";
-    } else if (window.innerWidth <= 480) {
+    } else if (screenWidth <= 480) {
         document.body.style.zoom = "70%";
     }
-};
 
+    alert("Detected screen width: " + screenWidth + "px, Applied zoom: " + document.body.style.zoom);
+};
 
   </script>
   
