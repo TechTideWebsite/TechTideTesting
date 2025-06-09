@@ -202,7 +202,7 @@
 
     // Ensure phones match the tablet's 53% zoom appearance
     if (screenWidth <= 768) { // Phones typically have widths below 768px
-        zoomLevel = 0.53; // Force 53% zoom for phones
+        zoomLevel = screenWidth / 1606; // Adjust scaling to match tablet zoom
     } else if (Math.abs(zoomLevel - 0.627) < 0.05) { // Tablet fix
         zoomLevel = 0.53;
     } else {
