@@ -202,6 +202,7 @@
 </script>
 
   <script>
+
     window.onload = function() {
     let originalZoom = document.body.style.zoom;
     
@@ -218,12 +219,13 @@
     setTimeout(() => {
         let newZoom = document.body.style.zoom;
         if (originalZoom !== newZoom) {
-            console.log("Zoom applied successfully: " + newZoom);
+            alert("Zoom applied successfully: " + newZoom);
         } else {
-            console.log("Zoom did NOT change. Browser may not support zoom adjustments.");
+            alert("Zoom did NOT change. Browser may not support zoom adjustments.");
         }
-    }, 500); // Small delay to allow browser rendering
+    }, 500); // Small delay for proper rendering
 };
+
 
   </script>
   
