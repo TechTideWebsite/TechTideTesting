@@ -197,11 +197,11 @@
   window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    // Base scaling on 2560px width (Chrome on 4K)
+    // Calculate zoom based on 2560px reference width
     let zoomLevel = screenWidth / 2560;
 
-    // Adjust zoom dynamically for all devices
-    zoomLevel = Math.max(0.53, Math.min(zoomLevel, 1)); // Ensures zoom stays between 53% and 100%
+    // Ensure zoom stays within reasonable limits (53% minimum, 100% maximum)
+    zoomLevel = Math.max(0.53, Math.min(zoomLevel, 1));
 
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
