@@ -197,8 +197,8 @@
   window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-pixel-density screens
 
-    // Automatically calculate zoom level based on screen width
-    let zoomLevel = Math.min(1, Math.max(0.5, screenWidth / 1606)); // Adjust max width as needed
+    // Dynamic scaling with a minimum zoom of 53%
+    let zoomLevel = Math.max(0.53, screenWidth / 1606); // Ensures no zoom lower than 53%
 
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
