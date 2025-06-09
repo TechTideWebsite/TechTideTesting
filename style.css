@@ -1041,3 +1041,15 @@ html {
     transform: translateX(-100%);
   }
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        zoom: 0.9; /* Slightly reduce zoom for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        zoom: 0.8; /* Further reduce zoom for mobile phones */
+    }
+}
