@@ -197,8 +197,13 @@
   window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    // Base scaling on 2560px width (Chrome on 4K)
+    // Calculate zoom dynamically but force it to 53% if close
     let zoomLevel = screenWidth / 2560;
+
+    // If zoom is close to 62.7%, override it to 53%
+    if (Math.abs(zoomLevel - 0.627) < 0.05) {
+        zoomLevel = 0.53;
+    }
 
     // Ensure zoom does not exceed 100% and does not go below 53%
     zoomLevel = Math.max(0.53, Math.min(zoomLevel, 1));
@@ -206,7 +211,7 @@
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
 
-    alert("Detected Screen Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
+    alert("Detected Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
 };
 
   </script>
