@@ -1049,7 +1049,7 @@ html {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     body {
         transform: scale(0.9);
         transform-origin: top left;
