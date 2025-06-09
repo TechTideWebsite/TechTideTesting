@@ -197,7 +197,7 @@
   window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    // Adjust zoom dynamically based on original 4K design (2560px base width)
+    // Base scaling on 2560px width (Chrome on 4K)
     let zoomLevel = screenWidth / 2560;
 
     // Ensure zoom does not exceed 100% and does not go below 53%
