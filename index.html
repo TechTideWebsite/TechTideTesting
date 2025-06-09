@@ -194,14 +194,14 @@
 
 <script>
 
-window.onload = function() {
+  window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
     // Calculate zoom percentage relative to 2560px width (which is treated as 100% zoom)
     let zoomLevel = screenWidth / 2560;
 
-    // Apply a slight correction factor to balance scaling across tablets and phones
-    zoomLevel *= 0.91; // Adjust this factor if needed
+    // Apply a smaller correction factor for better balance
+    zoomLevel *= 0.89; // Reduced from 0.91 to fine-tune scaling
 
     // Ensure zoom does not exceed 100%
     zoomLevel = Math.min(zoomLevel, 1);
