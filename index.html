@@ -204,28 +204,8 @@
   <script>
 
     window.onload = function() {
-    let originalZoom = document.body.style.zoom;
-    
-    // Apply zoom based on screen size
-    if (window.innerWidth <= 1200) {
-        document.body.style.zoom = "90%";
-    } else if (window.innerWidth <= 768) {
-        document.body.style.zoom = "80%";
-    } else if (window.innerWidth <= 480) {
-        document.body.style.zoom = "70%";
-    }
-
-    // Check if zoom changed successfully
-    setTimeout(() => {
-        let newZoom = document.body.style.zoom;
-        if (originalZoom !== newZoom) {
-            alert("Zoom applied successfully: " + newZoom);
-        } else {
-            alert("Zoom did NOT change. Browser may not support zoom adjustments.");
-        }
-    }, 500); // Small delay for proper rendering
+    document.body.style.zoom = "80%"; // Force zoom out globally
 };
-
 
   </script>
   
