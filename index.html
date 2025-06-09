@@ -197,14 +197,16 @@
   window.onload = function() {
     let screenWidth = window.innerWidth / window.devicePixelRatio; // Adjust for high-density screens
 
-    // Adjust zoom dynamically but force it to 53% if close
-    let zoomLevel = screenWidth / 2560; // Base it on original 4K design
-    zoomLevel = Math.max(0.53, Math.min(zoomLevel, 0.75)); // Ensures no zoom over 75% or below 53%
+    // Adjust zoom dynamically based on original 4K design (2560px base width)
+    let zoomLevel = screenWidth / 2560;
+
+    // Ensure zoom does not exceed 100% and does not go below 53%
+    zoomLevel = Math.max(0.53, Math.min(zoomLevel, 1));
 
     // Apply zoom
     document.body.style.zoom = (zoomLevel * 100) + "%";
 
-    alert("Detected Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
+    alert("Detected Screen Width: " + screenWidth + "px, Applied Zoom: " + document.body.style.zoom);
 };
 
   </script>
