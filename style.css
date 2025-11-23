@@ -1028,6 +1028,14 @@ html {
   }
 }
 
+#footer {
+  display: block;
+  width: 100%;
+  min-height: 120px;   /* reserve space */
+  background: transparent; /* optional, just to visualize */
+}
+
+
 
 
 
