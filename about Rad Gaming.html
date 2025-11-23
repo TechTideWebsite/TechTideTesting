@@ -140,10 +140,20 @@
  <!--   <img src="assets/download_23.png" class="bottom_bar"> -->
 
     </div>
+
+    <div id="footer"></div>
+<script>
+  fetch("team.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
     
 </body>
 
       <script src="javascript.js"></script>
     
 </html>
+
 
