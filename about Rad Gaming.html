@@ -108,16 +108,14 @@
 
         </main>
 
-<div id="footer" style="display: block; width: 100%; min-height: 120px;"></div>
+<div id="footer></div>
 
 <script>
-    
-fetch("footer.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("footer").innerHTML = html;
-  });
-
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
 </script>
 
  <!--   <img src="assets/download_23.png" class="bottom_bar"> -->
@@ -129,6 +127,7 @@ fetch("footer.html")
       <script src="javascript.js"></script>
     
 </html>
+
 
 
 
