@@ -115,13 +115,13 @@
 
  <!--   <img src="assets/download_23.png" class="bottom_bar"> -->
 
-    <div id="footer" class="bottom_bar" style="top: 1600px;"></div>
-    
+<div id="footer"></div>
+
 <script>
   fetch("footer.html")
     .then(res => res.text())
     .then(html => {
-      document.getElementById("footer").innerHTML = html;
+      document.getElementById("footer").outerHTML = html;
     });
 </script>
     
@@ -130,6 +130,7 @@
       <script src="javascript.js"></script>
     
 </html>
+
 
 
 
